@@ -1,0 +1,144 @@
+\newcommand\textbox[1]{%
+  \parbox{.31\textwidth}{#1}%
+}
+\newcommand\textboxx[1]{%
+  \parbox{.47\textwidth}{#1}%
+}
+
+\newenvironment{allowbreaks}
+{\mathactivatecomma
+  \mathcode`\,=\string"8000
+  \ignorespaces}
+{\ignorespacesafterend}
+
+\newcommand{\mathactivatecomma}{%
+  \begingroup\lccode`~=`\,
+  \lowercase{\endgroup\edef~}{\mathchar\the\mathcode`\,\penalty0 }}
+
+
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand\myeq{\stackrel{\mathclap{\normalfont\mbox{\tiny$\Delta$}}}{=}}
+
+\newcommand*{\todo}{\textbf{\color{red} TODO}}
+% sharpify
+\newcommand\sh[1]{#1^{\sharp}}
+% sharpify and prime
+\newcommand\shp[1]{#1^{\sharp \prime}}
+\newcommand\shpp[1]{#1^{\sharp \prime \prime}}
+
+% Post
+\newcommand\pp{\mathbf{Post}}
+
+% Summary
+\newcommand\su{\mathbf R}
+
+%_v
+\newcommand\vv[1]{#1_{\mathcal V}}
+
+% keywords
+\newcommand\kw[1]{\emph{\textcolor{orange}{#1}}}
+\newcommand\kww[1]{\mathbf{\textcolor{scarletred}{#1}}}
+
+% Variables
+%% a variable
+\newcommand\var{v}
+%% a set of variable
+\newcommand\svar{\mathfrak V}
+%% the set of all variables
+\newcommand\savar{\mathcal V}
+
+% Function
+%% a function
+\newcommand\fun{f}
+%% a set of function
+\newcommand\sfun{\mathfrak F}
+%% the set of all function
+\newcommand\safun{\mathcal F}
+
+% Expressions
+%% an expression
+\renewcommand\exp{e}
+%% a set of expression
+\newcommand\sexp{\mathcal E}
+%% the set of all expressions
+\newcommand\saexp{\kw{expr}}
+
+% Statements
+%% set of all statements
+\newcommand\sastmt{\kw{stmt}}
+%% a set of statement
+\newcommand\sstmt{\mathcal S}
+%% a statement
+\newcommand\stmt{\texttt{stmt}}
+
+% Programs
+%% set of all programs
+\newcommand\saprgm{\kw{prgm}}
+%% a set of programs
+\newcommand\sprgm{\mathcal P}
+%% a program
+\newcommand\prgm{p}
+% Left values
+%% set of all left-values
+\newcommand\salv{\kw{lval}}
+%% a left-value
+\newcommand\lv{lv}
+
+% cells
+%% set of all cells
+\newcommand\sacell{\mathcal{C}ell}
+%% a set of cells
+\newcommand\scell{C}
+%% a cell
+\newcommand\ocell{c}
+\newcommand\mopsa{\textsc{Mopsa}}
+
+
+% expression operations
+%% dereferences
+\newcommand{\deref}{\texttt{*}}
+%% addressing
+\newcommand{\addof}{\texttt{\&}}
+
+% set of definition
+\newcommand{\defset}{\mathbf{def}}
+\newcommand{\codef}{\overline{\mathbf{def}}}
+
+\makeatletter
+\newenvironment{CenteredBox}{% 
+\begin{Sbox}}{% Save the content in a box
+\end{Sbox}\centerline{\parbox{\wd\@Sbox}{\TheSbox}}}% And output it centered
+\makeatother
+
+\usepackage{scalerel}
+\DeclareMathOperator*{\bigcircledast}{\scalerel*{\circledast}{\sum}}
+
+\newcommand\rc[1]{\mathbf{#1}}
+\newcommand\cell[3]{\langle #1 , #2, #3 \rangle}
+\newcommand\eval[2]{\mathbb E \llbracket #1 \rrbracket (#2)}
+\newcommand\aeval[2]{\mathbb E^{\sharp} \llbracket #1 \rrbracket (#2)}
+\newcommand\exec[2]{\mathbb S \llbracket #1 \rrbracket (#2)}
+\newcommand\aexec[2]{\mathbb S^{\sharp} \llbracket #1 \rrbracket (#2)}
+\newcommand\aeexec{\sh{\mathbb{S}}_{\mathbf R}}
+\newcommand\aeexecapp[2]{\sh{\mathbb{S}}_{\mathbf R}\llbracket #1 \rrbracket(#2)}
+
+\newcommand{\ad}{\texttt{@}}
+\newcommand\saad{\mathcal A}
+\newcommand\oad{\mathfrak a}
+
+\newcommand\tdot[1]{\tikz{\fill[#1] circle(3pt);}}
+
+\newcommand\chdefset[2]{#1_{\mid #2}}
+\renewcommand\v[1]{\ovalvariable{#1}}
+\renewcommand\o[1]{\ovaloperator{#1}}
+\newcommand\num[1]{\ovalnum{#1}}
+
+\newcommand\saml{\mathfrak V}
+\newcommand\dsaml{\mathfrak V^{\star}}
+\newcommand{\splitatcommas}[1]{%
+  \begingroup
+  \begingroup\lccode`~=`, \lowercase{\endgroup
+    \edef~{\mathchar\the\mathcode`, \penalty0 \noexpand\hspace{0pt plus 1em}}%
+  }\mathcode`,="8000 #1%
+  \endgroup
+}

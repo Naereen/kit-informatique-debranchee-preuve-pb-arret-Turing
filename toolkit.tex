@@ -1,0 +1,901 @@
+\documentclass{article}
+\usepackage[a4paper,left=1cm,right=1cm,top=2cm,bottom=1cm]{geometry}
+
+\usepackage{fancyhdr}
+%\pagestyle{empty}
+%\thispagestyle{fancy}
+%\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[C]{\includegraphics[height=1cm]{Logos/logo_MPSA.jpg} \quad \includegraphics[height=1cm]{Logos/logoIREM.jpg}
+\hfill
+%{\small Groupe \og{}Faire de l'informatique sans ordinateur à l'école et au collège\fg{}}
+\includegraphics[height=.5cm]{Logos/iso-crop.pdf}
+\hfill \begin{minipage}{2.4 cm}
+\begin{center}
+\includegraphics[height=.5cm]{Logos/by-nc-sa-eu.png}
+\\
+\small f\'evrier 2020
+\end{center}
+\end{minipage}
+}
+\fancyfoot[R]{
+}
+\fancyfoot[L]{
+}
+\fancyfoot[C]{
+%\thepage
+}
+
+
+
+% \usepackage{lscape}
+\input{intro.tex}
+\begin{document}
+
+\pagestyle{empty}
+\thispagestyle{fancy}
+\rotatebox{90}{
+\scalebox{.95}{
+  \begin{tikzpicture}[scale=3]
+    \draw (0, 0) rectangle (9, 6.3);
+    \draw (0, 0) rectangle (3, 3.15);
+    \draw (0, 3.15) rectangle (0.5, 2.65);
+    \node[] at (0.25,2.90) {\texttt{E2}};
+    \draw[->,very thick] (0,1.575) -- (0.5,1.575);
+    \draw (3, 3.15) rectangle (3, 6.3);
+    \draw (0, 6.30) rectangle (0.5, 5.80);
+    \node[] at (0.25,6.05) {\texttt{E1}};
+    \draw[->,very thick] (0,4.725) -- (0.5,4.725);
+    \draw (3, 0) rectangle (6, 2.1);
+    \draw (3, 6.30) rectangle (3.5, 5.80);
+    \node[] at (3.25,6.05) {\texttt{A}};
+    \draw (3, 2.1) rectangle (6, 4.2);
+    \draw (3, 4.2) rectangle (3.5, 3.7);
+    \node[] at (3.25,3.95) {\texttt{B}};
+    \draw (3, 4.2) rectangle (6, 6.3);
+    \draw (3, 2.1) rectangle (3.5, 1.6);
+    \node[] at (3.25,1.85) {\texttt{C}};
+    \draw (6, 0) rectangle (9, 3.15);
+    \draw (6, 3.15) rectangle (6.5, 2.65);
+    \node[] at (6.25,2.90) {\texttt{S2}};
+    \draw (6, 0) rectangle (9, 3.15);
+    \draw (6, 6.3) rectangle (6.5, 5.80);
+    \node[] at (6.25,6.05) {\texttt{S1}};
+    \draw[-,very thick] (8.5,4.725) -- (9,4.725);
+    \draw[-,very thick] (8.5,1.575) -- (9,1.575);
+  \end{tikzpicture}
+}
+}
+  \newpage
+~
+\newpage
+
+\thispagestyle{fancy}
+
+\rotatebox{90}{ 
+\scalebox{.95}{
+  \begin{tikzpicture}[scale=3]
+    \draw (0, 0) rectangle (9, 6.3);
+    \draw (0, 0) rectangle (3, 3.15);
+    \draw (0, 3.15) rectangle (0.5, 2.65);
+    \node[] at (0.25,2.90) {\texttt{E2}};
+    \draw[->,very thick] (0,1.575) -- (0.5,1.575);
+    \draw (3, 3.15) rectangle (3, 6.3);
+    \draw (0, 6.30) rectangle (0.5, 5.80);
+    \node[] at (0.25,6.05) {\texttt{E1}};
+    \draw[->,very thick] (0,4.725) -- (0.5,4.725);
+    \draw (3, 0) rectangle (6, 2.1);
+    \draw (3, 6.30) rectangle (3.5, 5.80);
+    \node[] at (3.25,6.05) {\texttt{A}};
+    \draw (3, 2.1) rectangle (6, 4.2);
+    \draw (3, 4.2) rectangle (3.5, 3.7);
+    \node[] at (3.25,3.95) {\texttt{B}};
+    \draw (3, 4.2) rectangle (6, 6.3);
+    \draw (3, 2.1) rectangle (3.5, 1.6);
+    \node[] at (3.25,1.85) {\texttt{C}};
+    \draw (6, 0) rectangle (9, 3.15);
+    \draw (6, 3.15) rectangle (6.5, 2.65);
+    \node[] at (6.25,2.90) {\texttt{S2}};
+    \draw (6, 0) rectangle (9, 3.15);
+    \draw (6, 6.3) rectangle (6.5, 5.80);
+    \node[] at (6.25,6.05) {\texttt{S1}};
+    \draw[-,very thick] (8.5,4.725) -- (9,4.725);
+    \draw[-,very thick] (8.5,1.575) -- (9,1.575);
+  \end{tikzpicture}
+}}
+  
+\newpage
+~
+\newpage
+
+\thispagestyle{fancy}
+ \rotatebox{90}{ 
+ \scalebox{.95}{
+  \begin{tikzpicture}[scale=3]
+    \draw (0, 0) rectangle (9, 6.3);
+    \draw (0, 0) rectangle (3, 3.15);
+    \draw (0, 3.15) rectangle (0.5, 2.65);
+    \node[] at (0.25,2.90) {\texttt{E2}};
+    \draw[->,very thick] (0,1.575) -- (0.5,1.575);
+    \draw (3, 3.15) rectangle (3, 6.3);
+    \draw (0, 6.30) rectangle (0.5, 5.80);
+    \node[] at (0.25,6.05) {\texttt{E1}};
+    \draw[->,very thick] (0,4.725) -- (0.5,4.725);
+    \draw (3, 0) rectangle (6, 2.1);
+    \draw (3, 6.30) rectangle (3.5, 5.80);
+    \node[] at (3.25,6.05) {\texttt{A}};
+    \draw (3, 2.1) rectangle (6, 4.2);
+    \draw (3, 4.2) rectangle (3.5, 3.7);
+    \node[] at (3.25,3.95) {\texttt{B}};
+    \draw (3, 4.2) rectangle (6, 6.3);
+    \draw (3, 2.1) rectangle (3.5, 1.6);
+    \node[] at (3.25,1.85) {\texttt{C}};
+    \draw (6, 0) rectangle (9, 3.15);
+    \draw (6, 3.15) rectangle (6.5, 2.65);
+    \node[] at (6.25,2.90) {\texttt{S2}};
+    \draw (6, 0) rectangle (9, 3.15);
+    \draw (6, 6.3) rectangle (6.5, 5.80);
+    \node[] at (6.25,6.05) {\texttt{S1}};
+    \draw[-,very thick] (8.5,4.725) -- (9,4.725);
+    \draw[-,very thick] (8.5,1.575) -- (9,1.575);
+  \end{tikzpicture}
+}}
+  
+\newpage
+~
+\newpage
+
+
+\thispagestyle{fancy}
+  
+\begin{tabular}{cc}
+  \resizebox{.5\textwidth}{!}{
+  \begin{scratch}
+    \blockinit{quand \v{E1} est présent}
+    \blockvariable{mettre \v{S1} à \o{\v{E1}+\num{1}}}
+%    \blockstop{stop}
+  \end{scratch}
+  }
+  &
+    \begin{minipage}{0.5 \textwidth}
+      \vspace{4 cm}
+      \hfill \scalebox{2}{\LARGE{\textsc{Incrément}}} \hfill~
+    \end{minipage}
+\end{tabular}
+
+\begin{tabular}{cc}
+  % % \begin{figure}[h!]
+  % %   \centering
+  \resizebox{.5\textwidth}{!}{
+
+  \begin{scratch}
+    \blockinit{quand \v{E1} est présent}
+    \blockvariable{mettre \v{S1} à \v{E1}}
+    \blockvariable{mettre \v{S2} à \v{E1}}
+%    \blockstop{stop}
+  \end{scratch}
+  }
+  &
+    \begin{minipage}{0.5 \textwidth}
+      \vspace{8 cm}
+      \hfill \scalebox{2}{\LARGE{\textsc{Photocopie}}} \hfill~
+    \end{minipage}
+\end{tabular}
+
+\newpage
+~
+\newpage
+
+\thispagestyle{fancy}
+\begin{tabular}{cc}
+  \resizebox{.5\textwidth}{!}{
+  \begin{scratch}
+    \blockinit{quand \v{E1} et \v{E2} sont présents}
+    \blockvariable{mettre \v{A} à \v{E1}}
+    \blockvariable{mettre \v{B} à \v{E2}}
+    \blockvariable{mettre \v{C} à \ovalnum{0}}
+    \blockrepeat{répéter jusqu'à \o{\v{A}=\v{B}}}
+    {
+      \blockvariable{mettre \v{C} à \o{\v{C}+\num{1}}}
+      \blockvariable{mettre \v{A} à \o{\v{A}-\num{1}}}
+    }
+    \blockvariable{mettre \v{S1} à \v{C}}
+    \blockvariable{mettre \v{S2} à \num{0}}
+%    \blockstop{stop}
+  \end{scratch}
+  }
+  &
+    \begin{minipage}{0.5 \textwidth}
+      \vspace{8 cm}
+      \scalebox{2}{\LARGE{\textsc{Moins}}}\\      
+     (condition $E1>E2$)
+    \end{minipage}
+\end{tabular}
+\newpage
+~
+\newpage
+
+\thispagestyle{fancy}
+\begin{tabular}{cc}
+  \resizebox{.5\textwidth}{!}{
+  \begin{scratch}
+    \blockinit{quand \v{E1} et \v{E2} sont présents}
+    \blockvariable{mettre \v{A} à \v{E1}}
+    \blockvariable{mettre \v{B} à \v{E2}}
+    \blockvariable{mettre \v{C} à \ovalnum{0}}
+    \blockrepeat{répéter jusqu'à \o{\v{A}=\v{B}}}
+    {
+      \blockvariable{mettre \v{C} à \o{\v{C}+\num{1}}}
+      \blockvariable{}
+    }
+    \blockvariable{mettre \v{S1} à \v{C}}
+    \blockvariable{mettre \v{S2} à \num{0}}
+%    \blockstop{stop}
+  \end{scratch}
+  }
+  &
+    \begin{minipage}{0.5 \textwidth}
+      \vspace{8 cm}
+       \scalebox{2}{\LARGE{\textsc{\textsc{Moins$^{\star}$}}}}\\
+      (Condition $E1>E2$)
+    \end{minipage}
+\end{tabular}
+
+\newpage
+~
+\newpage
+
+\thispagestyle{fancy}
+
+\begin{tabular}{cc}
+  \resizebox{.5\textwidth}{!}{
+  \begin{scratch}
+    \blockinit{quand \v{E1} est présent}
+    \blockvariable{mettre \v{A} à \v{E1}}
+    \blockrepeat{répéter jusqu'à \o{\v{A}=\num{0}}}
+    {
+      \blockvariable{mettre \v{A} à \o{\v{A}+\num{1}}}
+    }
+     \blockvariable{mettre \v{S1} à \v{A}}
+%    \blockstop{stop}
+  \end{scratch}
+  }
+  &
+    \begin{minipage}{0.5 \textwidth}
+      \vspace{8 cm}
+      \hfill \scalebox{2}{\LARGE{\textsc{Super}}} \hfill~
+    \end{minipage}
+\end{tabular}
+\newpage
+~
+\newpage
+
+\thispagestyle{fancy}
+
+\begin{tabular}{cc}
+  % % \begin{figure}[h!]
+  % %   \centering
+  \resizebox{.5\textwidth}{!}{
+  \begin{scratch}
+    \blockinit{quand \v{E1} est présent}
+    \blockvariable{mettre \v{A} à \num{1}}
+    \blockifelse{si \o{\v{E1}=Arrêt} alors}
+    {
+      \blockrepeat{répéter jusqu'à \o{\v{A}=\num{0}}}
+      {
+        \blockvariable{mettre \v{A} à \o{\v{A}+\num{1}}}
+      }
+    }
+    {
+      \blockvariable{mettre \v{S1} à \num{0}}
+      \blockvariable{mettre \v{S2} à \num{0}}
+    }
+%    \blockstop{stop}
+  \end{scratch}
+  }
+  &
+    \begin{minipage}{0.5 \textwidth}
+      \vspace{8 cm}
+      \hfill \scalebox{2}{\LARGE{\textsc{Négation}}} \hfill~
+    \end{minipage}
+\end{tabular}
+\newpage
+~
+\newpage
+
+\thispagestyle{fancy}
+% 
+\begin{tabular}{cc}
+  % % \begin{figure}[h!]
+  % %   \centering
+  \resizebox{.5\textwidth}{!}{
+
+  
+  \begin{scratch}
+    \blockinit{quand \v{E1} et \v{E2} sont présents}
+    \blockifelse{si \boolsensing{l'exécution de \v{E1} se termine sur l'entrée  \v{E2}} alors}
+    {
+      \blockvariable{mettre \v{S1} à \num{Arrêt}}
+      \blockvariable{mettre \v{S2} à \num{0}}
+    }
+    {
+      \blockvariable{mettre \v{S1} à \num{Non Arrêt}}
+      \blockvariable{mettre \v{S2} à \num{0}}
+    }
+%    \blockstop{stop}
+
+  \end{scratch}
+  }
+  &
+    \begin{minipage}{0.5 \textwidth}
+      \vspace{8 cm}
+      \hfill \scalebox{2}{\LARGE{\textsc{Halt}}} \hfill~
+    \end{minipage}
+\end{tabular}
+
+\newpage
+~
+\newpage
+
+
+\thispagestyle{fancy}
+
+\scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{S1} à \o{\v{E1}+\num{1}}}
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{4 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Incrément}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+} \scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{S1} à \o{\v{E1}+\num{1}}}
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{4 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Incrément}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+}
+
+\scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{S1} à \o{\v{E1}+\num{1}}}
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{4 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Incrément}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+} \scalebox{0.4}{
+  \begin{tabular}{cc}
+    \resizebox{.5\textwidth}{!}{
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{A} à \v{E1}}
+      \blockrepeat{répéter jusqu'à \o{\v{A}=\num{0}}}
+      {
+        \blockvariable{mettre \v{A} à \o{\v{A}+\num{1}}}
+      }
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Super}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+}
+
+% \scalebox{0.4}{
+% \begin{tabular}{cc}
+%     % %   \begin{figure}[h!]
+%     % %     \centering
+    %     \resizebox{.5\textwidth}{!}{
+
+
+    %     \begin{scratch}
+    %     \blockinit{quand \v{E1} et \v{E2} sont présents}
+    %     \blockifelse{si \boolsensing{\v{E1} avec \v{E2} comme entrée s'arrête} alors}
+    %     {
+    %     \blockvariable{mettre \v{S1} à \num{Arrêt}}
+    %     \blockvariable{mettre \v{S2} à \num{0}}
+    %     }
+    %     {
+    %     \blockvariable{mettre \v{S1} à \num{Non Arrêt}}
+    %     \blockvariable{mettre \v{S2} à \num{0}}
+    %     }
+    %     \blockstop{stop}
+
+    %     \end{scratch}
+    %     }
+    %     &
+            %             \begin{minipage}{0.5 \textwidth}
+            %             \vspace{8 cm}
+            %             \hfill \scalebox{2}{\LARGE{\textsc{Arrêt}}} \hfill~
+            %             \end{minipage}
+            %   \end{tabular}
+            %             } \scalebox{0.4}{
+            %             \begin{tabular}{cc}
+            %     % %               \begin{figure}[h!]
+            %     % %                 \centering
+            %             \resizebox{.5\textwidth}{!}{
+
+
+            %             \begin{scratch}
+            %             \blockinit{quand \v{E1} et \v{E2} sont présents}
+            %             \blockifelse{si \boolsensing{\v{E1} avec \v{E2} comme entrée s'arrête} alors}
+            %             {
+            %             \blockvariable{mettre \v{S1} à \num{Arrêt}}
+            %             \blockvariable{mettre \v{S2} à \num{0}}
+            %             }
+            %             {
+            %             \blockvariable{mettre \v{S1} à \num{Non Arrêt}}
+            %             \blockvariable{mettre \v{S2} à \num{0}}
+            %             }
+            %             \blockstop{stop}
+
+            %             \end{scratch}
+            %             }
+            %     &
+                    %                     \begin{minipage}{0.5 \textwidth}
+                    %                     \vspace{8 cm}
+                    %                     \hfill \scalebox{2}{\LARGE{\textsc{Arrêt}}} \hfill~
+                    %                     \end{minipage}
+                    %   \end{tabular}
+                    %                     }
+
+\ \\
+
+\begin{tabular}{|c|c|}
+\hline 
+\scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{S1} à \v{E1}}
+      \blockvariable{mettre \v{S2} à \v{E1}}
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Photocopie}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+} & \scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{S1} à \v{E1}}
+      \blockvariable{mettre \v{S2} à \v{E1}}
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Photocopie}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+}
+\\ 
+
+ \scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+    \begin{scratch}
+      \blockinit{quand \v{E1} et \v{E2} sont présents}
+      \blockifelse{si \boolsensing{l'exécution de \v{E1} se termine sur l'entrée \v{E2}} alors}
+      {
+        \blockvariable{mettre \v{S1} à \num{Se Termine}}
+        \blockvariable{mettre \v{S2} à \num{0}}
+      }
+      {
+        \blockvariable{mettre \v{S1} à \num{Ne Se Termine Pas}}
+        \blockvariable{mettre \v{S2} à \num{0}}
+      }
+%      \blockstop{stop}
+
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Halt}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+} & \scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{ 
+    \begin{scratch}
+      \blockinit{quand \v{E1} et \v{E2} sont présents}
+      \blockifelse{si \boolsensing{l'exécution de \v{E1}  se termine sur  l'entrée \v{E2}} alors}
+      {
+        \blockvariable{mettre \v{S1} à \num{Se Termine}}
+        \blockvariable{mettre \v{S2} à \num{0}}
+      }
+      {
+        \blockvariable{mettre \v{S1} à \num{Ne Se Termine Pas}}
+        \blockvariable{mettre \v{S2} à \num{0}}
+      }
+%      \blockstop{stop}
+
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Halt}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+ }
+ \\ 
+ 
+\scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{A} à \num{1}}
+      \blockifelse{si \o{\v{E1}=Se Termine} alors}
+      {
+        \blockrepeat{répéter jusqu'à \o{\v{A}=\num{0}}}
+        {
+          \blockvariable{mettre \v{A} à \o{\v{A}+\num{1}}}
+        }
+      }
+      {
+        \blockvariable{mettre \v{S1} à \num{0}}
+        \blockvariable{mettre \v{S2} à \num{0}}
+      }
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Négation}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+}&
+\scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{A} à \num{1}}
+      \blockifelse{si \o{\v{E1}=Se Termine} alors}
+      {
+        \blockrepeat{répéter jusqu'à \o{\v{A}=\num{0}}}
+        {
+          \blockvariable{mettre \v{A} à \o{\v{A}+\num{1}}}
+        }
+      }
+      {
+        \blockvariable{mettre \v{S1} à \num{0}}
+        \blockvariable{mettre \v{S2} à \num{0}}
+      }
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Négation}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+} \\
+
+~& ~\\
+
+ \\ \hline
+
+\end{tabular}
+      %       \scalebox{0.4}{
+      %       \begin{tabular}{cc}
+      %     % %         \begin{figure}[h!]
+      %     % %           \centering
+      %       \resizebox{.5\textwidth}{!}{
+
+      %       \begin{scratch}
+      %       \blockinit{quand \v{E1} est présent}
+      %       \blockvariable{mettre \v{S1} à \v{E1}}
+      %       \blockvariable{mettre \v{S2} à \v{E1}}
+      %       \blockstop{stop}
+      %       \end{scratch}
+      %       }
+      %     &
+              %               \begin{minipage}{0.5 \textwidth}
+              %               \vspace{8 cm}
+              %               \hfill \scalebox{2}{\LARGE{\textsc{Photocopie}}} \hfill~
+              %               \end{minipage}
+              %   \end{tabular}
+              %               } \scalebox{0.4}{
+              %               \begin{tabular}{cc}
+              %     % %                 \begin{figure}[h!]
+              %     % %                   \centering
+              %               \resizebox{.5\textwidth}{!}{
+
+              %               \begin{scratch}
+              %               \blockinit{quand \v{E1} est présent}
+              %               \blockvariable{mettre \v{S1} à \v{E1}}
+              %               \blockvariable{mettre \v{S2} à \v{E1}}
+              %               \blockstop{stop}
+              %               \end{scratch}
+              %               }
+              %     &
+                      %                       \begin{minipage}{0.5 \textwidth}
+                      %                       \vspace{8 cm}
+                      %                       \hfill \scalebox{2}{\LARGE{\textsc{Photocopie}}} \hfill~
+                      %                       \end{minipage}
+                      %   \end{tabular}
+                      %                       }
+
+
+
+
+%       \scalebox{0.4}{
+      %       \begin{tabular}{cc}
+      %     % %         \begin{figure}[h!]
+      %     % %           \centering
+      %       \resizebox{.5\textwidth}{!}{
+
+
+      %       \begin{scratch}
+      %       \blockinit{quand \v{E1} et \v{E2} sont présents}
+      %       \blockifelse{si \boolsensing{\v{E1} avec \v{E2} comme entrée s'arrête} alors}
+      %       {
+      %       \blockvariable{mettre \v{S1} à \num{Arrêt}}
+      %       \blockvariable{mettre \v{S2} à \num{0}}
+      %       }
+      %       {
+      %       \blockvariable{mettre \v{S1} à \num{Non Arrêt}}
+      %       \blockvariable{mettre \v{S2} à \num{0}}
+      %       }
+      %       \blockstop{stop}
+
+      %       \end{scratch}
+      %       }
+      %     &
+              %               \begin{minipage}{0.5 \textwidth}
+              %               \vspace{8 cm}
+              %               \hfill \scalebox{2}{\LARGE{\textsc{Arrêt}}} \hfill~
+              %               \end{minipage}
+              %   \end{tabular}
+              %               }
+
+
+              %               \scalebox{0.4}{
+              %               \begin{tabular}{cc}
+              % % %                 \begin{figure}[h!]
+              % % %                   \centering
+              %               \resizebox{.5\textwidth}{!}{
+
+              %               \begin{scratch}
+              %               \blockinit{quand \v{E1} est présent}
+              %               \blockvariable{mettre \v{S1} à \v{E1}}
+              %               \blockvariable{mettre \v{S2} à \v{E1}}
+              %               \blockstop{stop}
+              %               \end{scratch}
+              %               }
+              %                 &
+                                  %                                   \begin{minipage}{0.5 \textwidth}
+                                  %                                   \vspace{8 cm}
+                                  %                                   \hfill \scalebox{2}{\LARGE{\textsc{Photocopie}}} \hfill~
+                                  %                                   \end{minipage}
+                                  %                               \end{tabular}
+                                  %                                   } \scalebox{0.4}{
+                                  %                                   \begin{tabular}{cc}
+                                  % % %                                     \begin{figure}[h!]
+                                  % % %                                       \centering
+                                  %                                   \resizebox{.5\textwidth}{!}{
+                                  %                                   \begin{scratch}
+                                  %                                   \blockinit{quand \v{E1} est présent}
+                                  %                                   \blockvariable{mettre \v{A} à \num{1}}
+                                  %                                   \blockifelse{si \o{\v{E1}=Arrêt} alors}
+                                  %                                   {
+                                  %                                   \blockrepeat{répéter jusqu'à \o{\v{A}=\num{0}}}
+                                  %                                   {
+                                  %                                   \blockvariable{mettre \v{A} à \o{\v{A}+\num{1}}}
+                                  %                                   }
+                                  %                                   }
+                                  %                                   {
+                                  %                                   \blockvariable{mettre \v{S1} à \num{0}}
+                                  %                                   \blockvariable{mettre \v{S2} à \num{0}}
+                                  %                                   }
+                                  %                                   \blockstop{stop}
+                                  %                                   \end{scratch}
+                                  %                                   }
+                                  %                                 &
+                                  %                                 \begin{minipage}{0.5 \textwidth}
+                                  %                                   \vspace{8 cm}
+                                  %                                   \hfill \scalebox{2}{\LARGE{\textsc{Négation}}} \hfill~
+                                  %                                 \end{minipage}
+                                  %                               \end{tabular}
+                                  %                             }
+                                  %                               \begin{tabular}{cc}
+                                  %                                 \begin{minipage}{0.5 \textwidth}
+                                  %                                   \vspace{8 cm}
+                                  %                                   \hfill \scalebox{2}{\LARGE{\textsc{Arrêt}}} \hfill~
+                                  %                                 \end{minipage}
+                                  %                                 &
+                                  %                                 \begin{minipage}{0.5 \textwidth}
+                                  %                                   \vspace{8 cm}
+                                  %                                   \hfill \scalebox{2}{\LARGE{\textsc{Non Arrêt}}} \hfill~
+                                  %                                 \end{minipage}
+                                  %                               \end{tabular}
+
+
+\newpage
+~
+\newpage
+
+\thispagestyle{fancy}
+
+
+\begin{tikzpicture}
+  \node[draw, rectangle, black, minimum width = 7 cm, minimum height =
+  7 cm] at (0,0) {\scalebox{2}{\LARGE{\textsc{Arrêt}}}};
+
+  \node[draw, rectangle, black, minimum width = 7 cm, minimum height =
+  7 cm] at (7 cm,0) {\scalebox{2}{\LARGE{\textsc{Non Arrêt}}}};
+\end{tikzpicture}
+
+
+\scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{S1} à \v{E1}}
+      \blockvariable{mettre \v{S2} à \v{E1}}
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Photocopie}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+}
+
+
+\scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{S1} à \v{E1}}
+      \blockvariable{mettre \v{S2} à \v{E1}}
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Photocopie}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+}
+
+
+\scalebox{0.4}{
+  \begin{tabular}{cc}
+    % % \begin{figure}[h!]
+    % %   \centering
+    \resizebox{.5\textwidth}{!}{
+
+    \begin{scratch}
+      \blockinit{quand \v{E1} est présent}
+      \blockvariable{mettre \v{S1} à \v{E1}}
+      \blockvariable{mettre \v{S2} à \v{E1}}
+%      \blockstop{stop}
+    \end{scratch}
+    }
+    &
+      \begin{minipage}{0.5 \textwidth}
+        \vspace{8 cm}
+        \hfill \scalebox{2}{\LARGE{\textsc{Photocopie}}} \hfill~
+      \end{minipage}
+  \end{tabular}
+}
+
+\end{document}
+
+%% \pagebreak
+
+
+%% \begin{tikzpicture}
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (0,0) {\scalebox{10}{\LARGE{\textsc{0}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (6 cm,0) {\scalebox{10}{\LARGE{\textsc{1}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (12 cm,0) {\scalebox{10}{\LARGE{\textsc{2}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (0,-6cm) {\scalebox{10}{\LARGE{\textsc{3}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (6 cm,-6cm) {\scalebox{10}{\LARGE{\textsc{4}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (12 cm,-6cm) {\scalebox{10}{\LARGE{\textsc{6}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (0 cm,-12cm) {\scalebox{10}{\LARGE{\textsc{6}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (6 cm,-12cm) {\scalebox{10}{\LARGE{\textsc{7}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (12 cm,-12cm) {\scalebox{10}{\LARGE{\textsc{8}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (0 cm,-18cm) {\scalebox{10}{\LARGE{\textsc{9}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (6 cm,-18cm) {\scalebox{10}{\LARGE{\textsc{1\hspace{-0.15em}0}}}};
+
+%%   \node[draw, rectangle, black, minimum width = 6 cm, minimum height =
+%%   6 cm] at (12 cm,-18cm) {\scalebox{10}{\LARGE{\textsc{1\hspace{-0.15em}1}}}};
+%% \end{tikzpicture}
+
+%% \end{document}
+
